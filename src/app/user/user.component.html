@@ -1,0 +1,15 @@
+<!--calling Singnal input values-->
+<!-- <div>
+  <button (click)="onSelectUser()">
+    <img [src]="imagePath()" [alt]="name()">
+    <span>{{ name() }}</span>
+  </button>
+</div> -->
+
+<!--calling Input values-->
+<app-card>
+  <button [class.active]="selected" (click)="onSelectUser()">
+    <img [src]="imagePath" [alt]="user.name">
+    <span>{{ user.name }}</span>
+  </button>
+</app-card>
